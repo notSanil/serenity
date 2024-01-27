@@ -63,4 +63,9 @@ void StylePainter::paint_simple_rect_shadow(Painter& painter, IntRect const& rec
     current().paint_simple_rect_shadow(painter, rect, shadow_bitmap, shadow_includes_frame, fill_content);
 }
 
+void StylePainter::paint_knob(Painter& painter, IntRect const& rect, Palette const& palette)
+{
+    current().paint_knob(painter, rect, palette);
+}
+
 }

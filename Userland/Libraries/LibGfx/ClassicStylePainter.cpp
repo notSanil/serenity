@@ -668,4 +668,13 @@ void ClassicStylePainter::paint_simple_rect_shadow(Painter& painter, IntRect con
     }
 }
 
+void ClassicStylePainter::paint_knob(Painter& painter, IntRect const& rect, Palette const& palette)
+{
+    Color base_color {Color::MidMagenta};
+    Color button_color = palette.button();
+    button_color.multiply(base_color);
+
+    painter.fill_ellipse(rect, base_color);
+}
+
 }

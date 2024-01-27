@@ -70,6 +70,7 @@ set(SOURCES
     INISyntaxHighlighter.cpp
     InputBox.cpp
     JsonArrayModel.cpp
+    KnobWidget.cpp
     Label.cpp
     LabelWithEventDispatcher.cpp
     Layout.cpp
